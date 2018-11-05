@@ -6,10 +6,10 @@ import java.util.Collections;
 public class Solution {
     public static void main(String[] args) {
         int[] arr={1,5,6,7,4,7,5,15,5,17};
-        int divisior=5;
+        int divisor=5;
         ArrayList<Integer> answer = new ArrayList();
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i] %divisior ==0)
+            if (arr[i] %divisor ==0)
                 answer.add(arr[i]);
         }
         if (answer.size() ==0)
