@@ -16,6 +16,7 @@ public class Solution {
         for (int i = 0; i <s.length() ; i++) {
             if(p == chars[i])
                 nump++;
+            System.out.println(chars[i]);
             if(P == chars[i])
                 nump++;
             if(Y == chars[i])
