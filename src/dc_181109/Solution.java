@@ -7,7 +7,7 @@ public class Solution {
         Integer tmp = n;
         String input = tmp.toString();
         for (int i = 0; i < input.length(); i++)
-            answer += input.charAt(i)-48;
+           answer += input.charAt(i)-48;
         System.out.println(answer);
 
     }
