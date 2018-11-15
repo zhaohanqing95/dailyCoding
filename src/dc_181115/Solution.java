@@ -24,9 +24,6 @@ public class Solution {
             Arrays.sort(newArray);
             answer[i] = newArray[k-1];
         }
-
         System.out.println(answer);
         }
-
     }
-}
