@@ -8,19 +8,18 @@ public class Solution {
         char[] chars = s.toCharArray();
         char[]  newChar = new char[chars.length];
         for (int i = 0; i < chars.length ; i++) {
+            int tmp;
             if (chars[i] == 32)
                 newChar[i] += chars[i];
             else
-                if (chars[i] < 91)
-                    if (((chars[i] + n) >  40 & (chars[i] + n) < 91))
-                        newChar[i]+= chars[i] + n;
-                    else
-                        newChar[i] += (chars[i] + n - 26);
-                 else
-                     if ((chars[i] + n) >  96 & (chars[i] + n) < 123)
-                         newChar[i]+= chars[i] + n;
-                      else
-                         newChar[i] += (chars[i] + n - 26);
+                if (chars[i] < 91) {
+                    tmp = (chars[i] - 65 + n) % 26;
+                    newChar[i] += tmp + 65;
+                }
+                else {
+                    tmp = (chars[i] - 97 + n) % 26;
+                    newChar[i] += tmp + 97;
+                }
         }
         answer = new String(newChar);
         System.out.println(answer);
