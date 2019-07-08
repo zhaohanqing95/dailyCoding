@@ -17,6 +17,6 @@ public class Solution {
      else{
          answer = a;
      }
-        System.out.println(answer);
-    }
-}
+             System.out.println(answer);
+             }
+             }

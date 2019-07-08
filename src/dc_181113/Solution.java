@@ -25,7 +25,7 @@ public class Solution {
         for (int i = 2; i <= n; i++) {
             answer += arr[i];
         }
-        System.out.println(answer);;
 
+        System.out.println(answer);;
     }
 }
