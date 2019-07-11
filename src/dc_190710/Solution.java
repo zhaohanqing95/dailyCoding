@@ -6,14 +6,14 @@ public class Solution {
         int answer = 1;
         for (int i = 1; i < n / 2 +1; i++) {
             int count = 0;
-                for (int k = i; count <= n; k++) {
-                    count = count + k;
-                    if (count == n){
-                        answer = answer + 1;
-                        break;
-                    }
+            for (int k = i; count <= n; k++) {
+                count = count + k;
+                if (count == n){
+                    answer = answer + 1;
+                    break;
+                }
             }
         }
-        System.out.println( answer);
+        System.out.println(answer);
     }
 }
