@@ -3,6 +3,7 @@ package dc_190715;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+
 public class Solution {
     public boolean isPrime(int num) {
         if (num < 2) return false;
@@ -27,4 +28,3 @@ public class Solution {
         System.out.println(count);
     }
 }
-
