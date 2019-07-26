@@ -9,6 +9,7 @@ public class Solution
         String[][] clothes ={{"yellow_hat","headgear" },{"blue_sunglasses","eyewear"},{"green_turban","headgear"}};
         int answer = 1;
         HashMap<String, Integer> map = new HashMap<String, Integer>();
+
         for (int i = 0; i < clothes.length; i++) {
             if(map.get(clothes[i][1]) != null)
                 map.replace(clothes[i][1], map.get(clothes[i][1])+1);
